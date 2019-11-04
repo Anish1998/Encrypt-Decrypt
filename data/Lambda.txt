@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+public class Lambda
+{
+public static void main(String args[])
+{
+Lambda e=new Lambda();
+String erri=args[0];
+e.lambda(erri);
+}
+public void lambda(String erri)
+    {
+        Random ran=new Random();
+        int num=Integer.parseInt(erri);
+        int[] z=new int[num];
+        for(int q=0;q<num;q++)
+        {
+            
+            z[q]=ran.nextInt(2);
+        }
+        for(int q=0;q<num;q++)
+        {
+            System.out.print(z[q]);
+        }
+    }
+
+}
+
